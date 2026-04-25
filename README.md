@@ -28,7 +28,8 @@ surveillance
 ### Block diagram
 
 <!-- Make sure the path to the picture is correct -->
-![Block Diagram](schematics/block_diagram.png)
+<img width="570" height="343" alt="diagrama" src="https://github.com/user-attachments/assets/5751892b-a875-4ad2-ad59-685eead0387a" />
+
 
 ### Schematic
 

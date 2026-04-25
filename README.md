@@ -2,14 +2,29 @@
 
 | | |
 |-|-|
-|`Author` | Your full name
+|`Author` | Ciocan Vlad Stefan
 
 ## Description
+Le projet consiste à concevoir un système de sécurité basé sur une carte Arduino Uno, capable de détecter la proximité d’un objet ou d’une personne à l’aide d’un capteur à ultrasons. Lorsque la distance mesurée devient inférieure à 15 cm, le système déclenche une alarme sonore et affiche un message d’avertissement « DO NOT TOUCH » sur un écran LCD. Le système reste en état d’alerte jusqu’à ce qu’un code PIN correct soit saisi à l’aide d’une télécommande infrarouge. Le récepteur IR permet de capter les signaux envoyés par la télécommande et de les interpréter afin de vérifier le code entré par l’utilisateur. En cas de code correct, l’alarme est désactivée et le système revient à son état initial de surveillance. En cas de code incorrect, l’alarme continue.
 
 ## Motivation
+Ce projet a été choisi afin de démontrer la réalisation d’un système de sécurité simple mais efficace, en utilisant des technologies accessibles comme Arduino et des capteurs de proximité. La motivation principale est de comprendre comment combiner plusieurs composants matériels pour créer un système interactif capable de détecter des actions indésirables et de réagir en temps réel. L’intégration d’un mécanisme d’authentification via une télécommande infrarouge ajoute un niveau supplémentaire de complexité et de réalisme, en simulant des applications concrètes dans le domaine des systèmes d’alarme et du contrôle d’accès.
 
 ## Architecture
-
+[Mode surveillance]
+        |
+        | distance < 15 cm
+        ↓
+[Mode alarme]
+        |
+        | saisie du PIN par télécommande
+        ↓
+[Validation du code]
+   |              |
+PIN correct   PIN incorrect
+   ↓              ↓
+Retour        Alarme maintenue
+surveillance
 ### Block diagram
 
 <!-- Make sure the path to the picture is correct -->

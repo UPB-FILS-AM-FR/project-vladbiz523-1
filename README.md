@@ -33,7 +33,8 @@ surveillance
 
 ### Schematic
 
-![Schematic](schematics/kicad_schematic.png)
+[schema_proiect_1.zip](https://github.com/user-attachments/files/27573775/schema_proiect_1.zip)
+
 
 ### Components
 
